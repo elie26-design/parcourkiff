@@ -24,7 +24,7 @@ export async function handler(event) {
         "Authorization": `Bearer ${process.env.XAI_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "grok-3-mini-fast",
+        model: "grok-2-latest",
         messages: [
           { role: "system", content: systemPrompt },
           { role: "user", content: userMessage },
