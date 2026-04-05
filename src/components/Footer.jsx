@@ -29,7 +29,7 @@ export default function Footer() {
             <h4 className="footer__col-title">Contact</h4>
             <a href="#" className="footer__link">Instagram</a>
             <a href="#" className="footer__link">TikTok</a>
-            <a href="mailto:contact@parcourkiff.fr" className="footer__link">Email</a>
+            <a href="mailto:contact@parcourkiff.fr" className="footer__link">Email: parcourkiff@gmail.com</a>
           </div>
         </div>
       </div>
