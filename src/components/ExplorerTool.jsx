@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { askClaude } from '../lib/api';
 
-const SYSTEM_PROMPT = `Tu es un expert de l'orientation post-bac en France. L'élève te dit ce qu'il veut faire plus tard. Tu dois lui présenter TOUS les chemins d'accès possibles pour y arriver : les différentes formations (BTS, BUT, Licence, Prépa, Écoles post-bac, etc.), les avantages et inconvénients de chaque voie, la durée, la sélectivité, et les passerelles possibles. Sois structuré, concret et bienveillant. Mentionne des formations réelles disponibles sur Parcoursup. Réponds en français et tout ca sous une forme de bullet point, pas de texte long.`;
+const SYSTEM_PROMPT = `Tu es un expert de l'orientation post-bac en France. L'élève te dit ce qu'il veut faire plus tard. Tu dois lui présenter TOUS les chemins d'accès possibles pour y arriver : les différentes formations (BTS, BUT, Licence, Prépa, Écoles post-bac, etc.), les avantages et inconvénients de chaque voie, la durée, la sélectivité, et les passerelles possibles. Sois structuré, concret et bienveillant. Mentionne des formations réelles disponibles sur Parcoursup. Réponds en français et tout ca sous une forme de bullet point, juste une liste des formation, leur durée, leur débouchés.`;
 
 export default function ExplorerTool() {
   const [query, setQuery] = useState('');
