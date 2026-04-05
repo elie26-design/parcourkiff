@@ -15,21 +15,21 @@ export default function Footer({ setActiveSection }) {
         <div className="footer__links">
           <div className="footer__col">
             <h4 className="footer__col-title">Outils</h4>
-            <a href="#" className="footer__link">QCM Orientation</a>
-            <a href="#" className="footer__link">Explorateur Parcours</a>
-            <a href="#" className="footer__link">Coach Lettres</a>
+            <a href="#" className="footer__link" onClick={(e) => { e.preventDefault(); setActiveSection('outils'); }}>QCM Orientation</a>
+            <a href="#" className="footer__link" onClick={(e) => { e.preventDefault(); setActiveSection('outils'); }}>Explorateur Parcours</a>
+            <a href="#" className="footer__link" onClick={(e) => { e.preventDefault(); setActiveSection('outils'); }}>Calendrier</a>
           </div>
           <div className="footer__col">
             <h4 className="footer__col-title">Offres</h4>
-            <a href="#" className="footer__link">Pack Essentiel</a>
-            <a href="#" className="footer__link">Pack Premium</a>
-            <a href="#" className="footer__link">Pack Intégral</a>
+            <a href="#" className="footer__link" onClick={(e) => { e.preventDefault(); setActiveSection('packs'); }}>Pack Essentiel</a>
+            <a href="#" className="footer__link" onClick={(e) => { e.preventDefault(); setActiveSection('packs'); }}>Pack Premium</a>
+            <a href="#" className="footer__link" onClick={(e) => { e.preventDefault(); setActiveSection('packs'); }}>Pack Intégral</a>
           </div>
           <div className="footer__col">
             <h4 className="footer__col-title">Contact</h4>
             <a href="#" className="footer__link">Instagram</a>
             <a href="#" className="footer__link">TikTok</a>
-            <a href="mailto:contact@parcourkiff.fr" className="footer__link">Email: parcourkiff@gmail.com</a>
+            <a href="mailto:contact@parcourkiff.fr" className="footer__link">Email</a>
           </div>
         </div>
       </div>
@@ -70,11 +70,11 @@ export default function Footer({ setActiveSection }) {
           align-items: center;
           gap: 8px;
         }
-        .footer__logo-icon { color: var(--blue-500); font-size: 16px; }
-        .footer__logo-accent { color: var(--blue-500); }
+        .footer__logo-icon { color: var(--sage-400); font-size: 16px; }
+        .footer__logo-accent { color: var(--sage-400); }
         .footer__tagline {
           font-size: 14px;
-          color: var(--slate-400);
+          color: var(--cream-500);
           line-height: 1.6;
         }
         .footer__links {
@@ -85,7 +85,7 @@ export default function Footer({ setActiveSection }) {
         .footer__col-title {
           font-size: 13px;
           font-weight: 600;
-          color: var(--slate-400);
+          color: var(--cream-400);
           text-transform: uppercase;
           letter-spacing: 1px;
           margin-bottom: 16px;
@@ -93,7 +93,7 @@ export default function Footer({ setActiveSection }) {
         .footer__link {
           display: block;
           font-size: 14px;
-          color: var(--slate-500);
+          color: var(--cream-600);
           padding: 5px 0;
           transition: color 0.2s;
         }
@@ -108,7 +108,7 @@ export default function Footer({ setActiveSection }) {
         }
         .footer__copy {
           font-size: 12px;
-          color: var(--slate-600);
+          color: var(--cream-700);
         }
         .footer__legal {
           display: flex;
@@ -116,10 +116,10 @@ export default function Footer({ setActiveSection }) {
         }
         .footer__legal a {
           font-size: 12px;
-          color: var(--slate-600);
+          color: var(--cream-700);
           transition: color 0.2s;
         }
-        .footer__legal a:hover { color: var(--slate-400); }
+        .footer__legal a:hover { color: var(--cream-400); }
 
         @media (max-width: 640px) {
           .footer__inner { flex-direction: column; gap: 36px; }

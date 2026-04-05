@@ -50,14 +50,14 @@ export default function Navbar({ activeSection, setActiveSection }) {
           position: fixed;
           top: 0; left: 0; right: 0;
           z-index: 100;
-          background: rgba(248,250,252,0.7);
+          background: rgba(254,253,251,0.7);
           backdrop-filter: blur(24px);
           -webkit-backdrop-filter: blur(24px);
           transition: all 0.3s;
         }
         .navbar--scrolled {
-          background: rgba(248,250,252,0.92);
-          box-shadow: 0 1px 0 var(--slate-200);
+          background: rgba(254,253,251,0.92);
+          box-shadow: 0 1px 0 var(--cream-300);
         }
         .navbar__inner {
           height: 68px;
@@ -75,8 +75,8 @@ export default function Navbar({ activeSection, setActiveSection }) {
           letter-spacing: -0.5px;
           user-select: none;
         }
-        .navbar__logo-icon { color: var(--blue-600); font-size: 16px; }
-        .navbar__logo-accent { color: var(--blue-600); }
+        .navbar__logo-icon { color: var(--sage-600); font-size: 16px; }
+        .navbar__logo-accent { color: var(--sage-600); }
         .navbar__links {
           display: flex;
           align-items: center;
@@ -90,19 +90,19 @@ export default function Navbar({ activeSection, setActiveSection }) {
           border-radius: var(--radius-sm);
           transition: all 0.2s;
         }
-        .navbar__link:hover { color: var(--slate-900); background: var(--slate-100); }
-        .navbar__link--active { color: var(--blue-600); background: var(--blue-50); }
+        .navbar__link:hover { color: var(--slate-900); background: var(--cream-200); }
+        .navbar__link--active { color: var(--sage-700); background: var(--sage-50); }
         .navbar__cta {
           margin-left: 12px;
           padding: 9px 20px;
-          background: var(--blue-600);
+          background: var(--sage-600);
           color: white;
           border-radius: var(--radius-md);
           font-size: 14px;
           font-weight: 600;
           transition: all 0.2s;
         }
-        .navbar__cta:hover { background: var(--blue-700); }
+        .navbar__cta:hover { background: var(--sage-700); }
         .navbar__burger { display: none; }
 
         @media (max-width: 640px) {
@@ -124,10 +124,10 @@ export default function Navbar({ activeSection, setActiveSection }) {
             display: none;
             position: absolute;
             top: 68px; left: 0; right: 0;
-            background: white;
+            background: var(--cream-50);
             flex-direction: column;
             padding: 16px 24px;
-            border-bottom: 1px solid var(--slate-200);
+            border-bottom: 1px solid var(--cream-300);
             gap: 8px;
           }
           .navbar__links--open { display: flex; }

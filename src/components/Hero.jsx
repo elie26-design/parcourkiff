@@ -54,9 +54,9 @@ export default function Hero({ setActiveSection }) {
         .hero__bg {
           position: absolute; inset: 0;
           background:
-            radial-gradient(ellipse at 20% 20%, var(--blue-100) 0%, transparent 50%),
-            radial-gradient(ellipse at 80% 70%, #E0E7FF 0%, transparent 45%),
-            radial-gradient(ellipse at 50% 50%, var(--slate-50) 0%, var(--slate-50) 100%);
+            radial-gradient(ellipse at 20% 20%, var(--cream-200) 0%, transparent 50%),
+            radial-gradient(ellipse at 80% 70%, var(--sage-50) 0%, transparent 45%),
+            radial-gradient(ellipse at 50% 50%, var(--cream-50) 0%, var(--cream-50) 100%);
         }
         .hero__grain {
           position: absolute; inset: 0;
@@ -73,14 +73,14 @@ export default function Hero({ setActiveSection }) {
         .hero__badge {
           display: inline-block;
           padding: 7px 18px;
-          background: var(--blue-50);
-          color: var(--blue-600);
+          background: var(--sage-50);
+          color: var(--sage-700);
           border-radius: 100px;
           font-size: 13px;
           font-weight: 600;
           margin-bottom: 28px;
           letter-spacing: 0.3px;
-          border: 1px solid var(--blue-200);
+          border: 1px solid var(--sage-200);
         }
         .hero__title {
           font-family: var(--font-display);
@@ -92,7 +92,7 @@ export default function Hero({ setActiveSection }) {
           letter-spacing: -1.5px;
         }
         .hero__title-accent {
-          color: var(--blue-600);
+          color: var(--sage-600);
           font-style: italic;
         }
         .hero__sub {
@@ -124,7 +124,7 @@ export default function Hero({ setActiveSection }) {
         .hero__stat-num {
           font-size: 30px;
           font-weight: 700;
-          color: var(--blue-600);
+          color: var(--sage-600);
           font-family: var(--font-display);
         }
         .hero__stat-label {
@@ -135,7 +135,7 @@ export default function Hero({ setActiveSection }) {
         .hero__stat-divider {
           width: 1px;
           height: 40px;
-          background: var(--slate-200);
+          background: var(--cream-300);
         }
 
         /* Buttons */
@@ -150,23 +150,36 @@ export default function Hero({ setActiveSection }) {
         }
         .btn--lg { padding: 15px 30px; }
         .btn--primary {
-          background: var(--blue-600);
+          background: var(--sage-600);
           color: white;
-          box-shadow: 0 4px 20px rgba(37,99,235,0.25);
+          box-shadow: 0 4px 20px rgba(74,122,74,0.25);
+          position: relative;
+          overflow: hidden;
+        }
+        .btn--primary::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.12) 50%, transparent 70%);
+          transform: translateX(-100%);
+          transition: transform 0.5s ease;
+        }
+        .btn--primary:hover::after {
+          transform: translateX(100%);
         }
         .btn--primary:hover {
-          background: var(--blue-700);
-          box-shadow: 0 6px 28px rgba(37,99,235,0.35);
+          background: var(--sage-700);
+          box-shadow: 0 6px 28px rgba(74,122,74,0.35);
           transform: translateY(-1px);
         }
         .btn--outline {
           background: transparent;
           color: var(--slate-800);
-          border: 2px solid var(--slate-200);
+          border: 2px solid var(--cream-300);
         }
         .btn--outline:hover {
-          border-color: var(--slate-300);
-          background: white;
+          border-color: var(--cream-400);
+          background: var(--cream-100);
         }
 
         @media (max-width: 640px) {

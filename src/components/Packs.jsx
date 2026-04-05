@@ -9,7 +9,7 @@ const packs = [
       'QCM d\'orientation IA',
       'Explorateur de parcours IA',
       'Coach IA illimité',
-      '1 appel avec un alumni de la formation de TON choix',
+      '1 appel avec un alumni (30 min)',
     ],
   },
   {
@@ -18,8 +18,9 @@ const packs = [
     popular: true,
     features: [
       'Tout le pack Essentiel',
-      'rédaction de 5 lettres de motivations personnalisées',
-      'Relecture humaine par un alumni',
+      'Rédaction personnalisée de tes lettres de motivation',
+      'Par un expert en orientation',
+      'Jusqu\'à 8 lettres accompagnées',
     ],
   },
   {
@@ -31,7 +32,6 @@ const packs = [
       '2 appels alumni personnalisés',
       '1 session coach d\'orientation',
       'Suivi personnalisé complet',
-      'Toutes tes lettres de motivation personnalisées et modifiables a volonté',
     ],
   },
 ];
@@ -86,23 +86,25 @@ export default function Packs() {
         }
         .pack-card {
           padding: 40px 36px;
-          background: white;
+          background: var(--cream-50);
           border-radius: var(--radius-xl);
-          border: 2px solid var(--slate-200);
+          border: 2px solid var(--cream-300);
           position: relative;
           transition: all 0.3s;
         }
         .pack-card:hover {
-          border-color: var(--slate-300);
+          border-color: var(--cream-400);
           box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+          transform: translateY(-2px);
         }
         .pack-card--popular {
-          border-color: var(--blue-600);
-          box-shadow: 0 12px 48px rgba(37,99,235,0.15);
+          border-color: var(--sage-600);
+          box-shadow: 0 12px 48px rgba(74,122,74,0.12);
           transform: scale(1.03);
+          background: white;
         }
         .pack-card--popular:hover {
-          box-shadow: 0 16px 56px rgba(37,99,235,0.2);
+          box-shadow: 0 16px 56px rgba(74,122,74,0.18);
         }
         .pack-popular-badge {
           position: absolute;
@@ -110,7 +112,7 @@ export default function Packs() {
           left: 50%;
           transform: translateX(-50%);
           padding: 7px 20px;
-          background: var(--blue-600);
+          background: var(--sage-600);
           color: white;
           border-radius: 100px;
           font-size: 12px;
@@ -133,7 +135,7 @@ export default function Packs() {
         .pack-price__num {
           font-size: 56px;
           font-weight: 700;
-          color: var(--blue-600);
+          color: var(--sage-600);
           font-family: var(--font-display);
           line-height: 1;
           letter-spacing: -2px;
@@ -141,7 +143,7 @@ export default function Packs() {
         .pack-price__cur {
           font-size: 22px;
           font-weight: 600;
-          color: var(--blue-600);
+          color: var(--sage-600);
           margin-top: 10px;
         }
         .pack-features {
@@ -155,11 +157,11 @@ export default function Packs() {
           font-size: 14px;
           color: var(--slate-600);
           padding: 12px 0;
-          border-bottom: 1px solid var(--slate-100);
+          border-bottom: 1px solid var(--cream-200);
           line-height: 1.4;
         }
         .pack-check {
-          color: var(--blue-600);
+          color: var(--sage-600);
           flex-shrink: 0;
         }
         .pack-btn {
@@ -169,23 +171,26 @@ export default function Packs() {
           font-size: 15px;
           font-weight: 600;
           transition: all 0.2s;
+          cursor: pointer;
+          font-family: var(--font-body);
         }
         .pack-btn--primary {
-          background: var(--blue-600);
+          background: var(--sage-600);
           color: white;
-          box-shadow: 0 4px 16px rgba(37,99,235,0.25);
+          border: none;
+          box-shadow: 0 4px 16px rgba(74,122,74,0.25);
         }
         .pack-btn--primary:hover {
-          background: var(--blue-700);
+          background: var(--sage-700);
           transform: translateY(-1px);
         }
         .pack-btn--outline {
           background: transparent;
-          color: var(--blue-600);
-          border: 2px solid var(--blue-600);
+          color: var(--sage-600);
+          border: 2px solid var(--sage-600);
         }
         .pack-btn--outline:hover {
-          background: var(--blue-50);
+          background: var(--sage-50);
         }
 
         @media (max-width: 640px) {
