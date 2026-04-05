@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 
-export default function Footer() {
+export default function Footer({ setActiveSection }) {
   return (
     <footer className="footer">
       <div className="container footer__inner">
@@ -38,9 +38,10 @@ export default function Footer() {
         <div className="footer__bottom">
           <p className="footer__copy">© 2026 ParcourKiff — Tous droits réservés</p>
           <div className="footer__legal">
-            <a href="#">Mentions légales</a>
-            <a href="#">CGV</a>
-            <a href="#">Confidentialité</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('mentions'); }}>Mentions légales</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('cgv'); }}>CGV</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('cgu'); }}>CGU</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('confidentialite'); }}>Confidentialité</a>
           </div>
         </div>
       </div>

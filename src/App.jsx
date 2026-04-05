@@ -1,10 +1,10 @@
-// src/App.jsx
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ToolSection from './components/ToolSection';
 import Packs from './components/Packs';
 import Footer from './components/Footer';
+import LegalPages from './components/LegalPages';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -24,22 +24,24 @@ export default function App() {
           <Packs />
         </>
       )}
-
       {activeSection === 'outils' && (
         <>
           <div style={{ height: 100 }} />
           <ToolSection />
         </>
       )}
-
       {activeSection === 'packs' && (
         <>
           <div style={{ height: 100 }} />
           <Packs />
         </>
       )}
+      {activeSection === 'mentions' && <LegalPages page="mentions" />}
+      {activeSection === 'cgu' && <LegalPages page="cgu" />}
+      {activeSection === 'cgv' && <LegalPages page="cgv" />}
+      {activeSection === 'confidentialite' && <LegalPages page="confidentialite" />}
 
-      <Footer />
+      <Footer setActiveSection={setActiveSection} />
     </div>
   );
 }
