@@ -1,16 +1,17 @@
 /* src/styles/global.css */
 :root {
   /* Colors — Beige chaud + Vert sauge */
-  --sage-50: #F2F7F2;
-  --sage-100: #E0EBE0;
-  --sage-200: #C1D7C1;
-  --sage-300: #9DBF9D;
-  --sage-400: #7BA57B;
-  --sage-500: #5E8A5E;
-  --sage-600: #4A7A4A;
-  --sage-700: #3D6B3D;
-  --sage-800: #2F5530;
-  --sage-900: #1E3A1F;
+  --sage-50: #F0F2F0;
+  --sage-100: #D6DCD6;
+  --sage-200: #A8B5A8;
+  --sage-300: #7A8E7A;
+  --sage-400: #5A705A;
+  --sage-500: #3E5740;
+  --sage-600: #2D4A30;
+  --sage-700: #233B25;
+  --sage-800: #1A2E1C;
+  --sage-900: #111F12;
+
 
   --cream-50: #FEFDFB;
   --cream-100: #FBF8F3;
