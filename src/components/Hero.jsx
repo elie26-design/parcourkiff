@@ -1,10 +1,19 @@
 // src/components/Hero.jsx
+import { useState } from 'react';
 
 export default function Hero({ setActiveSection }) {
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+    if (!email.trim() || !email.includes('@')) return;
+    // TODO: Envoyer l'email à Supabase ou un service d'emailing
+    setSubmitted(true);
+  };
+
   return (
     <section className="hero">
       <div className="hero__bg" />
-      <div className="hero__grain" />
 
       <div className="hero__content fade-up">
         <div className="hero__badge">✦ Ton avenir commence ici</div>
@@ -23,7 +32,14 @@ export default function Hero({ setActiveSection }) {
           <button className="btn btn--outline btn--lg" onClick={() => setActiveSection('packs')}>
             Voir les packs
           </button>
+          <button className="btn btn--outline btn--lg" onClick={() => {
+            document.querySelector('.call-section')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }}>
+            Réserver un premier rendez-vous gratuit
+          </button>
         </div>
+
+        
         <div className="hero__stats">
           <div className="hero__stat">
             <span className="hero__stat-num">3</span>
@@ -50,6 +66,7 @@ export default function Hero({ setActiveSection }) {
           align-items: center;
           justify-content: center;
           overflow: hidden;
+          padding: 40px 0;
         }
         .hero__bg {
           position: absolute; inset: 0;
@@ -57,12 +74,6 @@ export default function Hero({ setActiveSection }) {
             radial-gradient(ellipse at 20% 20%, var(--cream-200) 0%, transparent 50%),
             radial-gradient(ellipse at 80% 70%, var(--sage-50) 0%, transparent 45%),
             radial-gradient(ellipse at 50% 50%, var(--cream-50) 0%, var(--cream-50) 100%);
-        }
-        .hero__grain {
-          position: absolute; inset: 0;
-          opacity: 0.3;
-          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-          pointer-events: none;
         }
         .hero__content {
           position: relative;
@@ -109,8 +120,91 @@ export default function Hero({ setActiveSection }) {
           gap: 14px;
           justify-content: center;
           flex-wrap: wrap;
-          margin-bottom: 56px;
+          margin-bottom: 40px;
         }
+
+        /* Call gratuit */
+        .hero__call-box {
+          max-width: 480px;
+          margin: 0 auto 48px;
+          padding: 32px 28px;
+          background: white;
+          border-radius: 20px;
+          border: 2px solid var(--sage-200);
+          box-shadow: 0 8px 32px rgba(0,0,0,0.04);
+        }
+        .hero__call-icon {
+          font-size: 28px;
+          margin-bottom: 12px;
+        }
+        .hero__call-title {
+          font-family: var(--font-display);
+          font-size: 22px;
+          color: var(--slate-900);
+          margin-bottom: 8px;
+          font-weight: 400;
+        }
+        .hero__call-sub {
+          font-size: 14px;
+          color: var(--slate-500);
+          margin-bottom: 24px;
+          line-height: 1.5;
+        }
+        .hero__call-form {
+          display: flex;
+          gap: 10px;
+        }
+        .hero__call-input {
+          flex: 1;
+          padding: 14px 18px;
+          border: 2px solid var(--cream-300);
+          border-radius: 12px;
+          font-size: 15px;
+          font-family: var(--font-body);
+          outline: none;
+          background: var(--cream-50);
+          transition: border-color 0.2s;
+        }
+        .hero__call-input:focus {
+          border-color: var(--sage-500);
+          background: white;
+        }
+        .hero__call-btn {
+          padding: 14px 24px;
+          background: var(--sage-600);
+          color: white;
+          border: none;
+          border-radius: 12px;
+          font-size: 14px;
+          font-weight: 600;
+          font-family: var(--font-body);
+          cursor: pointer;
+          transition: all 0.2s;
+          white-space: nowrap;
+        }
+        .hero__call-btn:hover {
+          background: var(--sage-700);
+          transform: translateY(-1px);
+        }
+        .hero__call-note {
+          font-size: 12px;
+          color: var(--slate-400);
+          margin-top: 14px;
+        }
+        .hero__call-success {
+          padding: 16px;
+          background: var(--sage-50);
+          border: 1px solid var(--sage-200);
+          border-radius: 12px;
+          font-size: 14px;
+          color: var(--sage-700);
+          font-weight: 500;
+        }
+        .hero__call-success span {
+          color: var(--sage-600);
+          font-weight: 700;
+        }
+
         .hero__stats {
           display: flex;
           align-items: center;
@@ -187,6 +281,8 @@ export default function Hero({ setActiveSection }) {
           .hero__stat-num { font-size: 24px; }
           .hero__buttons { flex-direction: column; align-items: center; }
           .btn--lg { width: 100%; justify-content: center; }
+          .hero__call-form { flex-direction: column; }
+          .hero__call-btn { width: 100%; text-align: center; }
         }
       `}</style>
     </section>

@@ -5,6 +5,7 @@ import ToolSection from './components/ToolSection';
 import Packs from './components/Packs';
 import Footer from './components/Footer';
 import LegalPages from './components/LegalPages';
+import CallSection from './components/CallSection';
 
 const ACCESS_CODE = "eliesimon";
 
@@ -68,6 +69,7 @@ export default function App() {
           <Hero setActiveSection={setActiveSection} />
           <ToolSection />
           <Packs />
+          <CallSection />
         </>
       )}
       {activeSection === 'outils' && (
