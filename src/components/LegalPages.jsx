@@ -9,13 +9,13 @@ function MentionsLegales() {
       <p className="legal-date">Dernière mise à jour : avril 2026</p>
 
       <h2>1. Éditeur du site</h2>
-      <p><strong>Nom du site :</strong> ParcourKiff</p>
-      <p><strong>URL :</strong> https://parcourkiff.netlify.app</p>
+      <p><strong>Nom du site :</strong> YourWay</p>
+      <p><strong>URL :</strong> https://yourway.netlify.app</p>
       <p><strong>Nom de l'éditeur :</strong> {PLACEHOLDER}</p>
       <p><strong>Statut :</strong> {PLACEHOLDER}</p>
       <p><strong>SIRET :</strong> {PLACEHOLDER}</p>
       <p><strong>Adresse :</strong> {PLACEHOLDER}</p>
-      <p><strong>Email :</strong> contact@parcourkiff.fr</p>
+      <p><strong>Email :</strong> contact@yourway.fr</p>
 
       <h2>2. Hébergeur</h2>
       <p><strong>Raison sociale :</strong> Netlify, Inc.</p>
@@ -23,7 +23,7 @@ function MentionsLegales() {
       <p><strong>Site web :</strong> https://www.netlify.com</p>
 
       <h2>3. Propriété intellectuelle</h2>
-      <p>L'ensemble des contenus présents sur le site ParcourKiff (textes, graphismes, logos, icônes, images, logiciels, base de données) sont la propriété exclusive de l'éditeur ou de ses partenaires et sont protégés par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
+      <p>L'ensemble des contenus présents sur le site YourWay (textes, graphismes, logos, icônes, images, logiciels, base de données) sont la propriété exclusive de l'éditeur ou de ses partenaires et sont protégés par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
       <p>Toute reproduction, représentation, modification, publication, transmission ou dénaturation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit, est interdite sans autorisation écrite préalable de l'éditeur.</p>
 
       <h2>4. Responsabilité</h2>
@@ -31,7 +31,7 @@ function MentionsLegales() {
       <p>Les résultats fournis par les outils d'intelligence artificielle du site (QCM d'orientation, explorateur de parcours) sont donnés à titre indicatif uniquement et ne constituent en aucun cas un avis professionnel d'orientation. L'éditeur ne saurait être tenu responsable des décisions prises par les utilisateurs sur la base de ces résultats.</p>
 
       <h2>5. Crédits</h2>
-      <p>Conception et développement : ParcourKiff</p>
+      <p>Conception et développement : YourWay</p>
       <p>Hébergement : Netlify, Inc.</p>
       <p>Intelligence artificielle : Anthropic (Claude)</p>
     </div>
@@ -45,18 +45,18 @@ function CGU() {
       <p className="legal-date">Dernière mise à jour : avril 2026</p>
 
       <h2>Article 1 — Objet</h2>
-      <p>Les présentes Conditions Générales d'Utilisation (CGU) ont pour objet de définir les règles d'utilisation du site internet ParcourKiff, accessible à l'adresse https://parcourkiff.netlify.app, ainsi que des outils et services qui y sont proposés.</p>
+      <p>Les présentes Conditions Générales d'Utilisation (CGU) ont pour objet de définir les règles d'utilisation du site internet YourWay, accessible à l'adresse https://yourway.netlify.app, ainsi que des outils et services qui y sont proposés.</p>
       <p>L'utilisation du site implique l'acceptation pleine et entière des présentes CGU.</p>
 
       <h2>Article 2 — Description des services</h2>
-      <p>ParcourKiff propose un service d'accompagnement à l'orientation post-bac pour les lycéens, comprenant :</p>
+      <p>YourWay propose un service d'accompagnement à l'orientation post-bac pour les lycéens, comprenant :</p>
       <p>— Des outils d'intelligence artificielle : QCM d'orientation, explorateur de parcours d'études, calendrier Parcoursup interactif</p>
       <p>— Des appels avec des étudiants et jeunes diplômés (alumni)</p>
       <p>— Un service de rédaction personnalisée de lettres de motivation</p>
       <p>— Un accompagnement en orientation scolaire et professionnelle</p>
       <p>Les appels avec des étudiants ou jeunes diplômés (alumni) sont réalisés par des intervenants indépendants. 
-Ces intervenants ne sont pas salariés de ParcourKiff. 
-ParcourKiff agit en tant qu’intermédiaire de mise en relation et ne saurait être tenu responsable des propos ou conseils fournis par ces intervenants.</p>
+Ces intervenants ne sont pas salariés de YourWay. 
+YourWay agit en tant qu’intermédiaire de mise en relation et ne saurait être tenu responsable des propos ou conseils fournis par ces intervenants.</p>
 
       <h2>Article 3 — Accès au site</h2>
       <p>Le site est accessible gratuitement pour la consultation des informations et l'utilisation limitée des outils IA. L'accès aux services payants est conditionné à la souscription d'une offre et au paiement du prix correspondant.</p>
@@ -94,7 +94,7 @@ function CGV() {
       <p className="legal-date">Dernière mise à jour : avril 2026</p>
 
       <h2>Article 1 — Objet</h2>
-      <p>Les présentes Conditions Générales de Vente (CGV) régissent les ventes de prestations de services d'accompagnement à l'orientation post-bac réalisées par ParcourKiff. Toute commande implique l'acceptation sans réserve des présentes CGV.</p>
+      <p>Les présentes Conditions Générales de Vente (CGV) régissent les ventes de prestations de services d'accompagnement à l'orientation post-bac réalisées par YourWay. Toute commande implique l'acceptation sans réserve des présentes CGV.</p>
 
       <h2>Article 2 — Prestations proposées</h2>
       <h3>Pack Essentiel — 150 €</h3>
@@ -116,11 +116,11 @@ function CGV() {
       <p>Les prix sont indiqués en euros TTC. La TVA n'est pas applicable conformément à l'article 293 B du Code Général des Impôts.</p>
 
       <h2>Article 4 — Commande et paiement</h2>
-      <p>La commande est validée après acceptation des présentes CGV et paiement intégral. Le paiement s'effectue en ligne par carte bancaire via Stripe.Les paiements sont sécurisés par Stripe. ParcourKiff n’a pas accès aux données bancaires.</p>
+      <p>La commande est validée après acceptation des présentes CGV et paiement intégral. Le paiement s'effectue en ligne par carte bancaire via Stripe.Les paiements sont sécurisés par Stripe. YourWay n’a pas accès aux données bancaires.</p>
 
       <h2>Article 5 — Droit de rétractation</h2>
       <p>Le Client dispose d'un délai de 14 jours calendaires à compter de la validation de la commande pour exercer son droit de rétractation. Ce droit ne peut plus être exercé si l'exécution de la prestation a commencé avec l'accord du Client.</p>
-      <p>Pour exercer ce droit, envoyez un email à contact@parcourkiff.fr. Le remboursement sera effectué dans un délai de 14 jours.</p>
+      <p>Pour exercer ce droit, envoyez un email à contact@yourway.fr. Le remboursement sera effectué dans un délai de 14 jours.</p>
       <p>Le Client reconnaît et accepte expressément que l’exécution des prestations commence immédiatement après paiement. 
 En conséquence, il renonce expressément à son droit de rétractation conformément à l’article L221-28 du Code de la consommation.</p>
 
@@ -131,10 +131,10 @@ En conséquence, il renonce expressément à son droit de rétractation conform�
       <p>Tout appel alumni peut être reporté une fois, sous réserve de prévenir au moins 24 heures à l'avance. En cas d'absence non signalée, l'appel sera considéré comme consommé.</p>
 
       <h2>Article 8 — Responsabilité</h2>
-      <p>ParcourKiff s'engage à fournir un service de qualité (obligation de moyens). ParcourKiff ne garantit en aucun cas l'admission du Client dans une formation via Parcoursup.</p>
+      <p>YourWay s'engage à fournir un service de qualité (obligation de moyens). YourWay ne garantit en aucun cas l'admission du Client dans une formation via Parcoursup.</p>
 
       <h2>Article 9 — Réclamations</h2>
-      <p>Toute réclamation doit être adressée à contact@parcourkiff.fr dans un délai de 30 jours. L'éditeur s'engage à traiter toute réclamation dans un délai de 15 jours ouvrés.</p>
+      <p>Toute réclamation doit être adressée à contact@yourway.fr dans un délai de 30 jours. L'éditeur s'engage à traiter toute réclamation dans un délai de 15 jours ouvrés.</p>
 
       <h2>Article 10 — Droit applicable</h2>
       <p>Les présentes CGV sont soumises au droit français.</p>
@@ -149,11 +149,11 @@ function Confidentialite() {
       <p className="legal-date">Dernière mise à jour : avril 2026</p>
 
       <h2>Article 1 — Introduction</h2>
-      <p>ParcourKiff s'engage à protéger la vie privée de ses utilisateurs. La présente Politique décrit les données personnelles collectées, les finalités de leur traitement, et vos droits conformément au RGPD (Règlement UE 2016/679).</p>
+      <p>YourWay s'engage à protéger la vie privée de ses utilisateurs. La présente Politique décrit les données personnelles collectées, les finalités de leur traitement, et vos droits conformément au RGPD (Règlement UE 2016/679).</p>
 
       <h2>Article 2 — Responsable du traitement</h2>
       <p><strong>Nom :</strong> {PLACEHOLDER}</p>
-      <p><strong>Email :</strong> contact@parcourkiff.fr</p>
+      <p><strong>Email :</strong> contact@yourway.fr</p>
 
       <h2>Article 3 — Données collectées</h2>
       <p><strong>Données fournies par l'utilisateur :</strong> nom, prénom, email, téléphone, classe, filière, spécialités, réponses au QCM, informations pour les lettres de motivation.</p>
@@ -181,7 +181,7 @@ function Confidentialite() {
 
       <h2>Article 7 — Vos droits</h2>
       <p>Conformément au RGPD, vous disposez des droits d'accès, de rectification, d'effacement, de portabilité, d'opposition et de limitation du traitement.</p>
-      <p>Pour exercer vos droits : contact@parcourkiff.fr. Réponse sous 30 jours.</p>
+      <p>Pour exercer vos droits : contact@yourway.fr. Réponse sous 30 jours.</p>
       <p>Vous pouvez aussi introduire une réclamation auprès de la CNIL : www.cnil.fr</p>
 
       <h2>Article 8 — Mineurs</h2>

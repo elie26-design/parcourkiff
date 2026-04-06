@@ -22,7 +22,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
       <div className="navbar__inner container">
         <div className="navbar__logo" onClick={() => { setActiveSection('home'); setMobileOpen(false); }}>
           <span className="navbar__logo-icon">◆</span>
-          parcour<span className="navbar__logo-accent">kiff</span>
+          your<span className="navbar__logo-accent">way</span>
         </div>
 
         <button className="navbar__burger" onClick={() => setMobileOpen(!mobileOpen)}>

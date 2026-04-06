@@ -19,7 +19,7 @@ export default function Hero({ setActiveSection }) {
         <div className="hero__badge">✦ Ton avenir commence ici</div>
         <h1 className="hero__title">
           Trouve ta voie.<br />
-          <span className="hero__title-accent">Kiffe ton parcours.</span>
+          <span className="hero__title-accent">Find your way.</span>
         </h1>
         <p className="hero__sub">
           L'accompagnement Parcoursup nouvelle génération : coach IA + mentors qui ont vécu ce que tu vis.

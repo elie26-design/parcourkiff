@@ -1,4 +1,4 @@
-# 🎓 ParcourKiff — Accompagnement Parcoursup
+# 🎓 YourWay — Accompagnement Parcoursup
 
 Plateforme d'accompagnement Parcoursup avec coach IA et mentors alumni.
 
@@ -14,7 +14,7 @@ Plateforme d'accompagnement Parcoursup avec coach IA et mentors alumni.
 
 ```bash
 # Clone ou copie le projet
-cd parcourkiff-project
+cd yourway-project
 
 # Installe les dépendances
 npm install
@@ -67,12 +67,12 @@ netlify deploy --prod --dir=dist
 
 ### 5. Domaine personnalisé
 
-Sur Netlify, va dans **Domain settings** et ajoute `parcourkiff.fr` (ou ton domaine).
+Sur Netlify, va dans **Domain settings** et ajoute `yourway.fr` (ou ton domaine).
 
 ## 📁 Structure du projet
 
 ```
-parcourkiff-project/
+yourway-project/
 ├── index.html                  # Point d'entrée HTML
 ├── package.json                # Dépendances
 ├── vite.config.js              # Config Vite

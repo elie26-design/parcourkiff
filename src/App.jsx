@@ -40,7 +40,7 @@ export default function App() {
       <div style={lockStyles.page}>
         <div style={lockStyles.card}>
           <div style={lockStyles.icon}>◆</div>
-          <h1 style={lockStyles.title}>parcour<span style={lockStyles.accent}>kiff</span></h1>
+          <h1 style={lockStyles.title}>your<span style={lockStyles.accent}>way</span></h1>
           <p style={lockStyles.sub}>Entre le code d'accès pour continuer</p>
           <input
             type="password"

@@ -7,9 +7,9 @@ export default function Footer({ setActiveSection }) {
         <div className="footer__brand">
           <div className="footer__logo">
             <span className="footer__logo-icon">◆</span>
-            parcour<span className="footer__logo-accent">kiff</span>
+            your<span className="footer__logo-accent">way</span>
           </div>
-          <p className="footer__tagline">L'orientation post-bac, enfin kiffante.</p>
+          <p className="footer__tagline">L'orientation post-bac, simple et efficace.</p>
         </div>
 
         <div className="footer__links">
@@ -29,14 +29,14 @@ export default function Footer({ setActiveSection }) {
             <h4 className="footer__col-title">Contact</h4>
             <a href="#" className="footer__link">Instagram</a>
             <a href="#" className="footer__link">TikTok</a>
-            <a href="mailto:contact@parcourkiff.fr" className="footer__link">Email</a>
+            <a href="mailto:contact@yourway.fr" className="footer__link">Email</a>
           </div>
         </div>
       </div>
 
       <div className="container">
         <div className="footer__bottom">
-          <p className="footer__copy">© 2026 ParcourKiff — Tous droits réservés</p>
+          <p className="footer__copy">© 2026 YourWay — Tous droits réservés</p>
           <div className="footer__legal">
             <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('mentions'); }}>Mentions légales</a>
             <a href="#" onClick={(e) => { e.preventDefault(); setActiveSection('cgv'); }}>CGV</a>
